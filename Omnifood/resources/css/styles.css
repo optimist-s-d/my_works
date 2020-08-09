@@ -17,7 +17,6 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-
 .clearfix {zoom: 1;}
 .clearfix:after {
   content: '.';
@@ -43,7 +42,6 @@ html {
 section {
   padding: 80px 0;
 }
-
 
 /* ------  HEADINGS  ------ */
 
@@ -94,7 +92,6 @@ h2:after {
   margin-bottom: 30px;
 }
 
-
 /* ------  PARAGRAPHS  ------ */
 
 .long-copy {
@@ -107,7 +104,6 @@ h2:after {
   font-size: 90%;
   line-height: 145%;
 }
-
 
 /* ------  ICONS  ------ */
 
@@ -152,7 +148,8 @@ a:active {
 /* ------  BUTTONS  ------ */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
   display: inline-block;
   padding: 15px 40px;
   font-weight: 300;
@@ -163,7 +160,8 @@ a:active {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
   background-color: #f0932b;
   color: #fff;
   margin-right: 15px;
@@ -175,7 +173,8 @@ a:active {
 }
 
 .btn:active, 
-.btn:hover {
+.btn:hover,
+input[type=submit]:hover {
   background-color: #c9710e;
   border-color: #c9710e;
   color: #fff;
@@ -191,7 +190,6 @@ header {
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
-
 }
 
 .hero-text-box {
@@ -284,7 +282,6 @@ header {
   background-color: #f4f4f4;
 }
 
-
 .steps-box:first-child {
   margin-top: 30px;
   text-align: right;
@@ -308,20 +305,18 @@ header {
   margin-bottom: 80px;
 }
 
-
 .works-step div {
+  display: block;
   float: left;
   padding: 5px;
   margin-right: 25px ;
   color: #f0932b;
   font-size: 150%;
-  display: inline-block;
   border: 2px solid #f0932b;
   border-radius: 50%;
   width: 50px;
   height: 50px;
   text-align: center;
-
 }
 
 .btn-app:link,
@@ -335,11 +330,9 @@ header {
   margin-right: 10px;
 }
 
-
 /* ---------------------------------------- */
 /* CITIES */
 /* ---------------------------------------- */
-
 
 .section-cities img {
   width: 100%;
@@ -350,7 +343,6 @@ header {
 .city-feature {
   margin-bottom: 15px;
 }
-
 
 /* ---------------------------------------- */
 /* TESTIMONIALS (CUSTOMERS) */
@@ -393,9 +385,6 @@ cite img {
   margin-right: 10px;
   vertical-align: middle;
 }
-
-
-
 
 /* ---------------------------------------- */
 /* PLANS */
@@ -453,9 +442,119 @@ cite img {
   padding: 5px 0;
 }
 
+/* ----------------------------------------------- */
+/* Form */
+/* ----------------------------------------------- */
+
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type=text], 
+input[type=email], 
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+}
+
+input[type=checkbox] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
+
+footer {
+  background-color: rgb(3, 3, 3);
+  padding: 40px;
+  font-size: 80%;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin: 20px;
+}
+
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav li:first-child {
+  margin-left: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  border: none;
+  text-decoration: none;
+  color: #888;
+  transition: color 0.3s;
+}
 
 
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #ddd;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 150%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+  transition: 0.3s;
+}
 
 
+.ion-social-facebook:hover {
+  color: #3b5998;
+}
 
+.ion-social-twitter:hover {
+  color: #00aced;
+}
 
+.ion-social-googleplus:hover {
+  color: #dd4b39;
+}
+
+.ion-social-instagram:hover {
+  color: #517fa4;
+}
+
+footer p {
+  padding-top: 20px;
+  color: #888;
+  text-align: center;
+  font-size: 90%;
+}
