@@ -1,0 +1,39 @@
+body {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+header {
+  background-color:#000;
+  color: #fff;
+  height: 15vh;
+}
+h1 {
+  font-size: 50px;
+  line-height: 15vh;
+}
+.calendar {
+  margin: 0 15vw;
+}
+.days, .numbers {
+  display: grid;
+  width: 70vw;
+  height: 5vw;
+  margin-top: 3vh;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column-gap: 1vw;
+  grid-row-gap: 1em;
+}
+.days {
+  font-size: 1.5vw;
+}
+.numbers div {
+  display: block;
+  font-size: 1.2vw;
+  line-height: 100px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+}
+.numbers .last-month {
+  background-color: #fff;
+}

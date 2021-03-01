@@ -1,0 +1,89 @@
+﻿* {
+  outline: none;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #555;
+}
+
+header {
+  background-image: url(../img/header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+
+section {
+  padding: 30px 0;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 35px;
+  margin: 30px;
+}
+
+h4 {
+  font-size: 23px;
+}
+
+h4:after {
+  display: block;
+  height: 3px;
+  background-color: #555;
+  content: " ";
+  width: 50px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 80px;  
+}
+
+.logo {
+  height: 30px;
+  margin-top: 20px;
+}
+
+.main-nav {
+  list-style: none;
+  margin-top: 35px;
+}
+
+.main-nav li {
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+.navbar.affix {
+  position: fixed;
+  top:0;
+  width:100%;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.hero-text {
+  padding-top: 10vh;
+  font-size: 150px;
+}
+
+.btn {
+  margin-top: 50px;
+  width: 200px;
+  height: auto;
+  color: #fff;
+  background-image: url(../img/touch-bg.png);
+  background-size: cover;
+  background-position: center;
+  border: 0;
+  border-radius: 20px;
+}
+
+table img {
+  width: 18rem;
+  height: auto;
+  margin: 15px;
+}

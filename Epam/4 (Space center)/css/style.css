@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {  
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: #0b013c;
+  justify-content: center;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 5vw;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+section h2,
+footer h2 {
+  color: #0b013c;
+  word-spacing: 3px;
+  font-size: 2.5vw;
+}
+
+h3 {
+  font-size: 2vw;
+}
+
+section h3,
+footer h3 {
+  margin: 1.5vh;
+  color:#0b013c;
+  font-size: 1vw;
+  font-weight: 400;
+}
+
+footer h3,
+footer h2 {
+  color: #fff;
+}
+
+article h2,
+article h3 {
+  text-align: start;
+  margin-left: 15px;
+  margin-top: 25px;
+}
+
+p, 
+.state-building a {
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 1vw;
+  word-spacing: 1px;
+}
+
+header {
+  width: 90%;
+}
+
+header p {
+  margin: 20px 0;
+  line-height: 3vh;
+}
+
+section p,
+footer p {
+  margin: 0 auto;
+  padding: 5px 0;
+  width: 45%;
+  line-height: 1.5vw;
+  color: #808080;
+}
+
+footer p {
+  color: #fff;
+}
+
+.state-building p {
+  width: 100%;
+  font-size: 1vw;
+  line-height: 15px;
+  font-style: normal;
+}
+
+.aside p {
+  width: 90%;
+  text-align: start;
+  line-height: 1.8vw;
+}
+
+.col p {
+  width: 90%;
+  vertical-align: middle;
+  color: #111111;
+  line-height: 20px;
+}
+
+hr,
+article hr {
+  height: 7px;
+  background-color: #f8cb8a;
+  width: 75px;
+  border: none;
+}
+
+hr {
+  margin: 15px auto;
+}
+
+article hr { 
+  margin: 20px 15px;
+}
+
+header a {
+  padding: 4px;
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  color: #fff;
+  border: 2px solid #fff;
+  text-decoration: none;
+}
+
+.state-building a {
+  color: #fff;
+  text-decoration: none;
+  font-style: normal;
+}
+
+header {
+  margin: 0 auto;
+  background-image: url(../img/header-bg.png) ;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 90vw;
+  background-attachment: fixed;
+}
+
+.hero-text-box {
+  position: absolute; 
+  top: 30%;
+  left: 15%;
+}
+
+form input{
+  font-size: 0.8vw;
+  padding: 10px;
+  width: 20vw;
+  color: #a7a7a7;
+}
+
+button {
+  margin: 15px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #f8cb8a;
+}
+
+button:hover {
+  background-color: #f6bb66;
+  transition: 1s;
+}
+
+section {
+  margin: 0 auto;
+  padding-top: 7vh;
+  background-color: #fefaf3;
+  color: #111111;
+  text-align: center;
+}
+
+.article-main,
+.article-add {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 70%;
+  height: 70vh;
+  display: flex;
+}
+
+.moon {
+  width: 65%;
+  height: 35vh;
+}
+.aside {
+  width: 35%;
+  background-color: #fff;
+}
+.col {
+  width: 50%;
+  height: 55vh;
+  margin: 20px 0;
+  background-color: #fff;
+}
+.col:first-of-type {
+  margin-right: 70px
+}
+
+.moon img,
+.col img {
+  float: left;
+  width: 100%;
+  height: 70vh;
+}
+
+.col img {
+  height: 45vh;
+}
+
+.space-museum {
+  padding-top: 75px;
+  background-image: url(../img/space-bg.png);
+  background-position: center;
+  height: 50vh;
+  background-attachment: fixed;
+}
+
+.state-building {
+  display: flex;
+  padding: 5vw;
+  background-image: url(../img/footer-bg.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  text-align: start;
+}
+
+
+.state-content {
+  width:50%;
+  padding-left: 25vh;
+  padding-top: 15vh;
+}
+
+.state-building img {
+  width: 50%;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+}

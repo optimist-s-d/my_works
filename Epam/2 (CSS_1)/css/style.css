@@ -1,0 +1,198 @@
+@keyframes text-rotation {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.tm-main-nav a:hover {
+	background-color: lightskyblue;
+	color: #fff;
+}
+
+.tm-banner {
+	background-image: linear-gradient(180deg, burlywood, lightskyblue)
+}
+
+.tm-banner-inner {
+	background: white;
+}
+
+
+.tm-banner-text {
+	letter-spacing: 3px;
+	word-spacing: 10px;
+  	position: relative;
+  	text-shadow: #76cdd7 0 3px 0, #76cdd7 0 12px 2px;
+  	animation-name: text-rotation;
+  	animation-duration: 5s;
+}
+
+.tm-sidebar, .tm-main-content section {
+	box-shadow: 0 0 15px 0 rgba(61, 55, 61, 0.7)
+}
+
+.tm-section-description {
+	line-height: 1.5em;
+	text-indent: 1.5em;
+	font-style: italic;
+}
+
+.padding-medium h2 {
+	font-style: normal;
+	text-align: center;
+	color: lightskyblue;
+}
+
+.flex-2-col {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.flex-2-col > .tm-team-description-container {
+	padding: 15em 40px;
+}
+
+.box-bg h2:hover {
+	background-color: lightskyblue;
+	color: white;
+	font-weight: 600;
+}
+
+.tm-main-content section::before{
+	content: "";
+	border-top: 40px solid lightskyblue;
+	border-right: 40px solid transparent;
+}
+
+.padding-medium h2 {
+	color: lightskyblue;
+}
+
+.padding-medium li {
+	list-style-type: decimal-leading-zero;
+}
+
+.padding-medium a:hover:before {
+	content: '>';	
+}
+
+.padding-medium a:hover {
+	color: red;
+	font-weight: 700;
+}
+
+.padding-medium .text::after {
+	content: "New";
+	position: absolute;
+	color: red;
+	font-size: 0.5em;
+	font-weight: 900;
+}
+
+.box-work {
+	padding: 0.5em;
+}
+
+.box-work p {
+	font-style: italic;
+}
+
+.box-work:nth-child(even) {
+	background: lightskyblue;
+	color: white;
+}
+
+.box-work p::first-letter {
+	font-weight: 700;
+}
+
+.contact-form input {
+	border: 0;
+	border-bottom: 1px solid lightskyblue;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	background: #76cdd7;
+	transition: 0.3s;
+}
+
+.contact-form button {
+	float: right;
+	width: 120px;
+	height: 3em;
+	color: lightskyblue;
+	border-width: 2px;
+	border-radius: 0;
+	border-color: lightskyblue;
+	background: white;
+	transition: 0.5s;
+}
+
+.contact-form button:hover {
+	border-radius: 0;
+	border: 0;	
+	background-color: lightseagreen;
+	color: white;
+}
+
+#contact_subject {
+  	background-image: url(../img/email-icon.png);
+ 	background-repeat: no-repeat;
+  	background-position: 100% 0;
+  	background-size: contain;
+}
+
+#contact > h2 {
+  	text-align: right;
+}
+
+@media print {
+
+	.tm-team-img, 
+	.box, 
+	.tm-sidebar, 
+	.img-contact-us, 
+	.carousel-indicators, 
+	#contact, 
+	::before, ::after {
+		display: none;
+	}
+
+	.flex-2-col > .tm-team-description-container,
+	.tm-main-content, 
+	.tm-content-box, 
+	.padding-medium {
+		padding: 0; 
+		margin: 0 auto; 
+		text-align: center;
+		max-width: 100vw;
+	}
+
+
+	li:nth-child(even) {
+		text-align: right
+	}
+
+	li:nth-child(odd) {
+		text-align: left;
+	}
+
+	h2 {
+		color: lightskyblue; font-weight: 100;
+	}
+
+	.padding-medium li {
+		list-style-type: none; padding: 0 25vw 0 20vw;
+	}
+}
+
+
+
+
+
+
+
