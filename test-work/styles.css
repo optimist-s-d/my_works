@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #444;
+  background-color: #f3f3f3;
+  height: 100vh;
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5vw 2vw;
+  margin: 2vw 0;
+  border-radius: 50px;
+  font-size: 1vw;
+}
+
+.add-row__btn {
+  margin-left: 25vw;
+  background-color: #e99d5a;
+  border: 1px solid #e99d5a;
+  color: #f3f3f3;
+  opacity: 0;
+}
+
+.delete-row__btn {
+  margin-left: 3vw;
+  background-color: #f3f3f3;
+  border: 1px solid #e99d5a;
+  color: #e99d5a;
+  opacity: 0;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #e67e22;
+}
+
+.add-row__btn:hover,
+.add-row__btn:active {
+  border: 1px solid #e67e22;
+}
+
+.delete-row__btn:hover,
+.delete-row__btn:active {
+  border: 1px solid #cf6d17;
+  color: #fff;
+}
+
+.hero-text {
+  margin: 0 5vw;
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+
+.logo {
+  margin-left: 15vw;
+  height: 3vw;
+}
+
+.login {
+  display: flex;
+}
+
+.login__input {
+  border: none;
+  padding: 0.5rem 2rem;
+  font-size: 2vh;
+  font-family: inherit;
+  text-align: center;
+  width: 7vw;
+  border-radius: 10rem;
+  margin-right: 1rem;
+  color: inherit;
+  border: 1px solid #fff;
+  transition: all 0.3s;
+}
+
+.login__input:focus {
+  outline: none;
+  border: 2px solid #e99d5a;
+}
+
+.login__input::placeholder {
+  color: #bbb;
+}
+
+.login__btn {
+  padding: 0 2rem;
+  border: none;
+  background: none;
+  font-size: 2.5rem;
+  color: inherit;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.main {
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main__matrix {
+  margin: 2%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+table {
+  display: block;
+  border-collapse: collapse;
+}
+
+td,
+.sum-by-rows div,
+.sum-by-cols div {
+  padding: 2vh 1vw;
+  height: 3vh;
+  font-size: 1vw;
+  text-align: center;
+  line-height: 3vh;
+}
+
+.sum-by-rows div,
+.sum-by-cols div {
+  padding: 1.8vh 0.8vw;
+  margin: 0.2vh 0.35vw;
+  width: auto;
+  font-size: 0.9vw;
+
+  display: block;
+
+  border: 1px solid #777;
+  border-radius: 20px;
+}
+
+td {
+  border: 1px solid #ffae66;
+}
+
+.sum-by-rows {
+  margin-left: 2%;
+}
+
+.sum-by-cols {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: -7%;
+}
+
+footer {
+  text-align: right;
+  font-size: 1.5rem;
+}

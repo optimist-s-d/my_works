@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Matrix</title>
+  </head>
+  <body>
+    <nav>
+      <img src="img/logo.png" alt="Logo" class="logo" />
+      <p class="hero-text">Enter values to get started</p>
+
+      <form class="login">
+        <input
+          type="number"
+          placeholder="ROWS"
+          min="0"
+          max="50"
+          class="login__input input--rows"
+        />
+        <input
+          type="number"
+          placeholder="COLUMNS"
+          min="0"
+          max="50"
+          class="login__input input--cols"
+        />
+        <button class="login__btn">&rarr;</button>
+      </form>
+    </nav>
+    <main class="main">
+      <div class="main__matrix">
+        <div class="sum-by-rows"></div>
+      </div>
+      <div class="sum-by-cols"></div>
+
+      <div>
+        <button class="btn add-row__btn">Add row</button>
+        <button class="btn delete-row__btn">Delete row</button>
+      </div>
+    </main>
+    <footer>&copy; by Dmytro Sotula</footer>
+    <script src="script.js"></script>
+  </body>
+</html>
