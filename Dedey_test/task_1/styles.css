@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.book__container {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.book__elem {
+  margin: 10vh 1vw;
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 10px;
+  margin-bottom: 12px;
+}
+
+input {
+  border: none;
+  width: auto;
+  margin: 0 1vh;
+  color: #444;
+  font-family: "Fira Sans";
+  font-style: italic;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.number {
+  display: inline-block;
+  position: relative;
+  padding: 0 0.5vw;
+}
+
+.number input {
+  height: 30px;
+  width: 30px;
+}
+
+.num__controls {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 30px;
+}
+
+.num__controls > div {
+  width: 30px;
+  height: 15px;
+  line-height: 15px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 10px;
+}
+
+.num__controls > div:hover {
+  background: #ccc;
+}
+
+.nc-plus {
+  color: #ed9915;
+}
+
+.nc-minus {
+  color: #9aa0a6;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
+.btn__find {
+  display: inline-block;
+  background-color: #ed9915;
+  padding: 15px 35px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 15px;
+}
+
+.btn__add {
+  background-color: #fed18c;
+  font-size: 20px;
+  padding: 4px 10px;
+
+  border-radius: 50%;
+}
+
+.dot {
+  background-color: #8a929a;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+.filter {
+  width: 2px;
+  height: 30px;
+  margin-top: 20px;
+  background-color: #e2e0e0;
+}
+
+.fa-chevron-down {
+  font-weight: 100;
+  padding-top: 18px;
+  margin-right: 15px;
+  color: #8a929a;
+}

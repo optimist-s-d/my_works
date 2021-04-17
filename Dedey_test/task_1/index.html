@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&display=swap"
+    />
+    <link rel="shortcut icon" type="image/png" href="icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>DEDEY task_1</title>
+  </head>
+  <body>
+    <div class="book__container">
+      <div class="main__info">
+        <p>Место или название отеля</p>
+        <i class="fa fa-map-marker" style="color: #fdb038"></i>
+
+        <input type="text" placeholder="Введите здесь место" />
+      </div>
+      <span class="filter"></span>
+      <div class="book__elem book__date">
+        <p>Заезд</p>
+        <i class="fa fa-calendar" style="color: #fdb038"> </i>
+        <input
+          type="text"
+          placeholder="07 Февраля"
+          onfocus="(this.type='date')"
+          class="date"
+        />
+      </div>
+      <span class="dot"></span>
+
+      <div class="book__elem book__date">
+        <p>Выезд</p>
+        <input
+          type="text"
+          placeholder="22 Февраля"
+          onfocus="(this.type='date')"
+          class="date"
+        />
+      </div>
+      <i class="fa fa-chevron-down"></i>
+      <span class="filter"></span>
+      <div class="book__elem rooms">
+        <p>Номера</p>
+        <div class="number">
+          <input type="text" class="values" value="1" />
+          <div class="num__controls">
+            <div class="nc-plus">▲</div>
+            <div class="nc-minus">▼</div>
+          </div>
+        </div>
+      </div>
+      <div class="book__elem adults">
+        <p>Взрослые</p>
+        <div class="number">
+          <input type="text" class="values" value="1" />
+          <div class="num__controls">
+            <div class="nc-plus">▲</div>
+            <div class="nc-minus">▼</div>
+          </div>
+        </div>
+      </div>
+      <div class="book__elem children">
+        <p>Дети</p>
+        <div class="number">
+          <input type="text" class="values" value="0" />
+          <div class="num__controls">
+            <div class="nc-plus">▲</div>
+            <div class="nc-minus">▼</div>
+          </div>
+        </div>
+      </div>
+      <div class="book__elem add">
+        <p><a class="btn btn__add">+</a></p>
+      </div>
+      <div class="book__elem find">
+        <p><button class="btn btn__find">НАЙТИ</button></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

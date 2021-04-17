@@ -1,0 +1,36 @@
+body {
+  font: 12px Arial, sans-serif;
+}
+
+.dropBlock {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  margin: 10vh auto;
+  border: 2px dashed #5d5d5d;
+}
+
+#dropZone {
+  border: none;
+  color: #71ffc4;
+  font-size: 18px;
+  text-align: center;
+  width: 600px;
+  padding: 50px 0;
+  background: #93e6ff60;
+}
+
+#dropZone.hover {
+  background: #ccc;
+  border-color: #555;
+}
+
+#dropZone.error {
+  background: #faa;
+  border-color: #f00;
+}
+
+#dropZone.drop {
+  background: rgba(47, 196, 216, 0.479);
+  border-color: rgba(126, 186, 255, 0.877);
+}
